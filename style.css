@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-color: pink;
+  }
+  
+  #title {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 20px 0 15px 0;
+  }
+  
+  svg {
+    background-color: white;
+  }
+  
+  #tooltip {
+    padding: 10px; 
+    background-color: #EECBC0;
+    position: absolute;
+    opacity: 0;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #D28375;
+    
+  }
+  
+  #legend {
+    width: 200px;
+    height: 100px;
+  }
