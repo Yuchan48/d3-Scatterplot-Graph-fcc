@@ -1,31 +1,45 @@
 body {
-    text-align: center;
-    background-color: pink;
-  }
-  
-  #title {
-    font-size: 27px;
-    font-weight: bold;
-    margin: 20px 0 15px 0;
-  }
-  
-  svg {
-    background-color: white;
-  }
-  
-  #tooltip {
-    padding: 10px; 
-    background-color: #EECBC0;
-    position: absolute;
-    opacity: 0;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #D28375;
-    
-  }
-  
-  #legend {
-    width: 200px;
-    height: 100px;
-  }
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  background-image: url("https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+  background-repeat: repeat;
+
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+}
+
+svg {
+  background-color: white;
+}
+
+#tooltip {
+  padding: 10px;
+  background-color: #eecbc0;
+  position: absolute;
+  opacity: 0;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #d28375;
+}
+
+#legend {
+  width: 200px;
+  height: 100px;
+}
